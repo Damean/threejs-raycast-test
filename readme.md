@@ -1,4 +1,7 @@
 # Three.js Journey
+This starter project was created by Bruno Simon and is part of the ThreeJS Journey Course
+
+You can find the course here 👉 [https://threejs-journey.xyz/](https://threejs-journey.xyz/)
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
