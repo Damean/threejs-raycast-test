@@ -81,10 +81,41 @@ tick()
 /**
  * Textures
  */
-/* const loadingManager = new THREE.LoadingManager()
+
+/* 
+const loadingManager = new THREE.LoadingManager()
 const textureLoader = new THREE.TextureLoader(loadingManager)
 const texture1 = textureLoader.load('/textures/color1.jpg') 
-const texture2 = textureLoader.load('/textures/color2.jpg') */
+const texture2 = textureLoader.load('/textures/color2.jpg')
+
+const cubeTextureLoader = new THREE.CubeTextureLoader(loadingManager)
+const cubeTextureEnvironment = cubeTextureLoader.load([
+  '/textures/px.jpg',
+  '/textures/nx.jpg',
+  '/textures/py.jpg',
+  '/textures/ny.jpg',
+  '/textures/pz.jpg',
+  '/textures/nz.jpg',
+])
+*/
+
+/**
+ * Lights
+ */
+
+/*
+const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+scene.add(ambientLight)
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+directionalLight.position.x = 1
+directionalLight.position.y = 1
+directionalLight.position.z = 2
+scene.add(directionalLight)
+
+const directionalLightHelper = new THREE.DirectionalLightHelper(directionalLight)
+scene.add(directionalLightHelper)
+*/
 
 /**
  * Object
