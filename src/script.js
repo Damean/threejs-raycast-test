@@ -79,6 +79,14 @@ const tick = () =>
 tick()
 
 /**
+ * Textures
+ */
+/* const loadingManager = new THREE.LoadingManager()
+const textureLoader = new THREE.TextureLoader(loadingManager)
+const texture1 = textureLoader.load('/textures/color1.jpg') 
+const texture2 = textureLoader.load('/textures/color2.jpg') */
+
+/**
  * Object
  */
 const geometry = new THREE.BoxGeometry(1, 1, 1)
