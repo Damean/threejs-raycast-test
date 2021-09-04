@@ -53,7 +53,7 @@ controls.enableDamping = true
  */
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
-    /* alpha: true */
+    alpha: true
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
@@ -104,25 +104,25 @@ const cubeTextureEnvironment = cubeTextureLoader.load([
  * Lights
  */
 
-/*
-const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
 scene.add(ambientLight)
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5)
 directionalLight.position.x = 1
 directionalLight.position.y = 1
 directionalLight.position.z = 2
 scene.add(directionalLight)
 
-const directionalLightHelper = new THREE.DirectionalLightHelper(directionalLight)
-scene.add(directionalLightHelper)
-*/
+/*const directionalLightHelper = new THREE.DirectionalLightHelper(directionalLight)
+scene.add(directionalLightHelper)*/
+
 
 /**
  * Object
  */
 const geometry = new THREE.BoxGeometry(1, 1, 1)
-const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
+const material = new THREE.MeshStandardMaterial({ color: 0xff0000 })
 const mesh = new THREE.Mesh(geometry, material)
 scene.add(mesh)
 

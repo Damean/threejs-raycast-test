@@ -8,7 +8,8 @@ module.exports = {
     output:
     {
         filename: 'bundle.[contenthash].js',
-        path: path.resolve(__dirname, '../dist')
+        path: path.resolve(__dirname, '../dist'),
+        clean: true,
     },
     devtool: 'source-map',
     plugins:
@@ -56,7 +57,7 @@ module.exports = {
 
             // Images
             {
-                test: /\.(jpg|png|gif|svg)$/,
+                test: /\.(jpg|jpeg|png|gif|svg)$/,
                 use:
                 [
                     {
@@ -71,7 +72,7 @@ module.exports = {
 
             // Fonts
             {
-                test: /\.(ttf|eot|woff|woff2)$/,
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use:
                 [
                     {
