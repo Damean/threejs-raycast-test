@@ -1,8 +1,8 @@
 # Three.js Raycast Test
 This raycast test was done with three.js
--You can click on the spheres.
--The sphere color will change and retain the color until you click again on it.
--The code also contais a section to create a mouse enter and mouse leave effect but is not applied to the spheres.
+- You can click on the spheres.
+- The sphere color will change and retain the color until you click again on it.
+- The code also contais a section to create a mouse enter and mouse leave effect but is not applied to the spheres.
 
 
 ## Setup
