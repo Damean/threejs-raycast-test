@@ -1,7 +1,9 @@
-# Three.js Journey - Webpack Starter Project
-This starter project was created by Bruno Simon and it is part of the Three.js Journey Course
+# Three.js Raycast Test
+This raycast test was done with three.js
+-You can click on the spheres.
+-The sphere color will change and retain the color until you click again on it.
+-The code also contais a section to create a mouse enter and mouse leave effect but is not applied to the spheres.
 
-You can find the course here 👉 [https://threejs-journey.xyz/](https://threejs-journey.xyz/)
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
@@ -18,7 +20,7 @@ npm run dev
 npm run build
 ```
 
-## You can now start coding
+## File distribution
 
 - The JS is located in src/script.js
 - The HTML is located in src/index.html
